@@ -1,0 +1,181 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+}
+
+::placeholder {
+  text-align: center;
+}
+
+/* or, for legacy browsers */
+
+::-webkit-input-placeholder {
+  text-align: center;
+}
+
+:-moz-placeholder {
+  /* Firefox 18- */
+  text-align: center;
+}
+
+::-moz-placeholder {
+  /* Firefox 19+ */
+  text-align: center;
+}
+
+:-ms-input-placeholder {
+  text-align: center;
+}
+
+input[type='checkbox'] {
+    background-color: aquamarine;
+}
+
+.btn {
+  padding: 5px 0;
+  color: gray;
+  background-color: aquamarine;
+  border-radius: 5px;
+  border: 2px solid black;
+  cursor: pointer;
+  transition: all ease-in-out .3s;
+}
+
+.btn:hover {
+    background-color: rgb(0, 253, 168);
+}
+
+.btn:active {
+    box-shadow: 0 0 3px 3px rgba(255, 255, 255, 0.596);
+}
+
+input[type=checkbox]:checked ~ .todo-card__element--button__label {
+  color: gray;
+}
+
+.todo-card__element--button__label {
+  text-align: center;
+}
+
+.inpField {
+  padding: 5px 0;
+  border-radius: 5px;
+  border: 2px solid black;
+  display: block;
+}
+
+.wrapper {
+  padding-top: 20px;
+  display: grid;
+  grid-template-columns: 0.5fr 1fr 0.5fr;
+  justify-content: center;
+  justify-items: center;
+}
+
+.todo-card {
+  background-color: rgb(176, 176, 176);
+  border-radius: 5px;
+  padding: 40px;
+  grid-column: 2;
+}
+
+.todo-card__header {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.disabledColor {
+    background-color: rgb(128, 126, 126) !important;
+}
+
+.crosstext {
+    text-decoration: line-through;
+}
+
+.todo-card__header__upper {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+
+.todo-card__header__lower {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr 2fr 2fr;
+  gap: 10px;
+}
+
+.todo-card__header--button__deleteall {
+  width: 20%;
+}
+
+.todo-card__header--button__deletelast {
+  width: 20%;
+}
+
+.todo-card__header--input__task {
+  width: 40%;
+}
+
+.todo-card__header--button__add {
+  width: 20%;
+}
+
+.todo-card__element {
+  padding: 10px 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px;
+  border: 2px solid black;
+  background-color: rgb(185, 185, 185);
+  margin: 0 auto;
+}
+
+.todo-card__element:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.todo-card__element--info {
+    flex-basis: 50%;
+  text-align: center;
+  background-color: white;
+}
+
+.todo-card__element--button__comp {
+  width: 30px;
+}
+
+.todo-card__element--side {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 5px;
+  row-gap: 20px;
+}
+
+.todo-card__element--side__close, .todo-card__element--button__label {
+  width: 35px;
+}
+
+.todo-card__element--button__label {
+  color: transparent;
+}
+
+.todo-card__element--side__date {
+    width: 75px;
+  text-align: center;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.hide {
+  display: none;
+}
